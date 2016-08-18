@@ -30,3 +30,47 @@ body {
   border:1px solid #ccc;
   overflow:auto;
 }
+
+#pokedexDisplay {
+  width: auto;
+  box-shadow: 0 0 0 1px #8a8a8a inset;
+}
+
+#addButtonDiv {
+  width: auto;
+  box-shadow: 0 0 0 1px #8a8a8a inset;
+}
+
+#addToTeamButton {
+  padding: 10px;
+}
+
+#pokedexPictureDiv {
+  width: auto;
+  box-shadow: 0 0 0 1px #8a8a8a inset;
+}
+
+#pokedexPicture {
+  width: 200px;
+  height: 200px;
+  margin: auto;
+  background-color: blue;
+}
+
+#pokedexNameDiv {
+  width: auto;
+    box-shadow: 0 0 0 1px #8a8a8a inset;
+}
+
+#pokedexName {
+
+}
+
+#pokedexTypeDiv {
+  width: auto;
+  box-shadow: 0 0 0 1px #8a8a8a inset;
+}
+
+#pokedexType {
+  
+}
