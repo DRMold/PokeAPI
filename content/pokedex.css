@@ -1,0 +1,14 @@
+body {
+  margin: 0px;
+  padding: 0px;
+}
+
+#pokedex {
+  width: 100%;
+  min-height: 535px;
+  background-color: red;
+}
+
+#pokedexList {
+  box-shadow: 0 0 0 2px #8a8a8a inset;
+}
