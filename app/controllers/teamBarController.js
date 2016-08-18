@@ -1,6 +1,6 @@
 (function() {
 
-	var TeamBarController = function($scope, pokeService) {
+	var TeamBarController = function($scope, $window, pokeService) {
 		$scope.team = [];
 
 		$scope.addTeam = function(id) {
@@ -9,8 +9,8 @@
 				.then(function(response) {
 					$scope.team.push(response.data);
 				},
-				function(xhr, status, err) {
-					alert(err.message);
+				function(error) {
+					$window.alert(error.message);
 				})
 			}
 			else {
@@ -47,7 +47,7 @@
 		$scope.addTeam(6);
 	};
 
-	TeamBarController.$inject = ['$scope', 'pokeService'];
+	TeamBarController.$inject = ['$scope', '$window', 'pokeService'];
     angular.module('myPokeApp').controller('TeamBarController', TeamBarController);
 	
 }());
