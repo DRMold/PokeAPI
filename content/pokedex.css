@@ -12,6 +12,7 @@ body {
 #pokedexList {
   display: inline-block;
   width: 25%;
+  border: 4px solid green;
 }
 
 .dexEntry {
@@ -25,30 +26,30 @@ body {
 }
 
 #boxForList {
-  padding-left: 50px;
-  padding-top: 30px;
   display: inline-block;
   height:535px;
-  width:300%;
+  width:100%;
   overflow:auto;
 }
 
 #pokedexDisplay {
   display: inline-block;
+  height: 535px;
   width: 70%;
+  border: 4px solid red;
   /*box-shadow: 0 0 0 1px #8a8a8a inset;*/
 }
 
 #addButtonDiv {
   width: auto;
+  margin-bottom: 20px;
+  margin-right: 60px;
   /*box-shadow: 0 0 0 1px #8a8a8a inset;*/
   overflow: hidden;
 }
 
 #addToTeamButton {
   float: right;
-  margin-right: 60px;
-  margin-top: 10px;
   padding: 10px;
   width: 160px;
   height: 50px;
