@@ -112,5 +112,21 @@ body {
   color: white;
   text-align: center;
   margin-bottom:20px;
+}
 
+.type-fire {
+  background-color: #FF8811;
+}
+.type-water {
+  background-color: #4466DD;
+}
+.type-ice {
+  background-color: #77AAFF;
+}
+.type-grass {
+  background-color: #11AA44;
+}
+.type-electric {
+  background-color: #FFFF00;
+  color: black;
 }
