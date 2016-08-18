@@ -5,23 +5,8 @@
 <div id="teamBar">
   <div id="teamTitle"><b>Team</b></div>
   <div id="boxBar" ng-controller="TeamBarController">
-    <div id="box1" class="box" ng-click="removeTeam(0)">
-      <img ng-if="team[0] !== undefined" ng-src="{{team[0].sprites.front_default}}">
-    </div>
-    <div id="box2" class="box" ng-click="removeTeam(1)">
-      <img ng-if="team[1] !== undefined" ng-src="{{team[1].sprites.front_default}}">
-    </div>
-    <div id="box3" class="box" ng-click="removeTeam(2)">
-      <img ng-if="team[2] !== undefined" ng-src="{{team[2].sprites.front_default}}">
-    </div>
-    <div id="box4" class="box" ng-click="removeTeam(3)">
-      <img ng-if="team[3] !== undefined" ng-src="{{team[3].sprites.front_default}}">
-    </div>
-    <div id="box5" class="box" ng-click="removeTeam(4)">
-      <img ng-if="team[4] !== undefined" ng-src="{{team[4].sprites.front_default}}">
-    </div>
-    <div id="box6" class="box" ng-click="removeTeam(5)">
-      <img ng-if="team[5] !== undefined" ng-src="{{team[5].sprites.front_default}}">
+    <div class="box" ng-repeat="pokemon in team track by $index" ng-click="removeTeam(pokemon.index)">
+      <img ng-src="{{pokemon.sprites.front_default}}">
     </div>
   </div>
 </div>
