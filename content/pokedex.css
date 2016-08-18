@@ -1,0 +1,32 @@
+body {
+  margin: 0px;
+  padding: 0px;
+}
+
+#pokedex {
+  width: 100%;
+  min-height: 535px;
+  background-color: red;
+}
+
+#pokedexList {
+  max-width: 30%;
+  box-shadow: 0 0 0 2px green inset;
+}
+
+.dexEntry {
+  box-shadow: 0 0 0 1px #8a8a8a inset;
+  padding: 2px;
+  margin-bottom: -1px;
+}
+
+.dexEntryTitle {
+  color: #881111;
+}
+
+#boxForList {
+  height:535px;
+  width:auto;
+  border:1px solid #ccc;
+  overflow:auto;
+}
