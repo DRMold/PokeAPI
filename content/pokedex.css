@@ -4,13 +4,14 @@ body {
 }
 
 #pokedex {
+  display: block;
   width: 100%;
   min-height: 535px;
-  background-color: red;
 }
 
 #pokedexList {
-  max-width: 30%;
+  display: inline-block;
+  width: 25%;
   box-shadow: 0 0 0 2px green inset;
 }
 
@@ -26,14 +27,16 @@ body {
 
 #boxForList {
   height:535px;
-  width:auto;
-  border:1px solid #ccc;
+  width:100%;
+
+  box-shadow: 0 0 0 2px red inset;
   overflow:auto;
 }
 
 #pokedexDisplay {
-  width: auto;
-  box-shadow: 0 0 0 1px #8a8a8a inset;
+  display: inline-block;
+  width: 70%;
+  /*box-shadow: 0 0 0 1px #8a8a8a inset;*/
 }
 
 #addButtonDiv {
@@ -45,7 +48,7 @@ body {
 #addToTeamButton {
   float: right;
   margin-right: 60px;
-  margin-top: 30px;
+  margin-top: 10px;
   padding: 10px;
   width: 160px;
   height: 50px;
