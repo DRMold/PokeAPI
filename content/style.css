@@ -8,6 +8,7 @@ body {
   width: 100%;
   height: 110px;
   padding: 40px;
+  border: 1px solid black;
 }
 
 #pokedex {
@@ -16,20 +17,31 @@ body {
   background-color: red;
 }
 
-#teamTitle {
-  font-size: 20pt;
-  color: white;
+#boxBar {
+ text-align: center;
+  border: 1px solid black;
+  display: block;
 }
 
-#boxBar {
-  display: block;
+#teamTitle {
+  display: inline-block;
+  height: 80px;
+  margin-right: 36px;
+  border: 1px solid black;
+  font-family: Arial, "Helvetica Neue", Helvetica, sans-serif;
+  font-size: 24pt;
+  color: white;
+  /*text-shadow: -1px 0 black, 0 1px black, 1px 0 black, 0 -1px black;*/
+  -webkit-text-fill-color: white; /* Will override color (regardless of order) */
+   -webkit-text-stroke-width: 1px;
+   -webkit-text-stroke-color: black;
 }
 
 .box {
   display: inline-block;
-  width: 64px;
-  height: 64px;
-  border: 5px solid #8a8a8a;
+  width: 80px;
+  height: 80px;
+  border: 2px solid #8a8a8a;
   margin-right: 36px;
   background-color: white;
 }
