@@ -6,7 +6,7 @@
   <div id="teamTitle"><b>Team</b></div>
   <div id="boxBar" ng-controller="TeamBarController">
     <div class="box" ng-repeat="pokemon in team track by $index" ng-click="removeTeam(pokemon.index)">
-      <img ng-src="{{pokemon.sprites.front_default}}">
+      <img ng-if="pokemon !== undefined" ng-src="{{pokemon.sprites.front_default}}">
     </div>
   </div>
 </div>
