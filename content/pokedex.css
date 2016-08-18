@@ -10,46 +10,61 @@ body {
 }
 
 #pokedexList {
+  background-image: url("../views/pokedex.png");
+  background-size: 100% 100%;
+  height: 535px;
   display: inline-block;
-  width: 25%;
-  box-shadow: 0 0 0 2px green inset;
+  vertical-align: top;
+  width: 30%;
 }
 
 .dexEntry {
+  background-color: #DDDDDD;
   box-shadow: 0 0 0 1px #8a8a8a inset;
-  padding: 2px;
+  padding: 5px;
   margin-bottom: -1px;
 }
 
 .dexEntryTitle {
-  color: #881111;
+  color: #555555;
+  margin-left: 20px;
+  font-family: Verdana, Geneva, sans-serif;
+  font-size: 20px;
+  font-style: normal;
+  font-variant: normal;
+  font-weight: 500;
 }
 
 #boxForList {
-  height:535px;
-  width:100%;
-
-  box-shadow: 0 0 0 2px red inset;
+  display: inline-block;
+  margin-top: 137px;
+  margin-left: 6.5%;
+  height:300px;
+  width:75.8%;
+  /*border: 1px solid yellow;*/
   overflow:auto;
 }
 
 #pokedexDisplay {
+  vertical-align: top;
   display: inline-block;
-  width: 70%;
+  height: 535px;
+  width: 60%;
   /*box-shadow: 0 0 0 1px #8a8a8a inset;*/
 }
 
 #addButtonDiv {
   width: auto;
+  margin-bottom: 20px;
+  margin-right: 60px;
   /*box-shadow: 0 0 0 1px #8a8a8a inset;*/
   overflow: hidden;
 }
 
 #addToTeamButton {
   float: right;
-  margin-right: 60px;
-  margin-top: 10px;
   padding: 10px;
+  margin-top: 10px;
   width: 160px;
   height: 50px;
   font-size: 20px;
@@ -97,5 +112,21 @@ body {
   color: white;
   text-align: center;
   margin-bottom:20px;
+}
 
+.type-fire {
+  background-color: #FF8811;
+}
+.type-water {
+  background-color: #4466DD;
+}
+.type-ice {
+  background-color: #77AAFF;
+}
+.type-grass {
+  background-color: #11AA44;
+}
+.type-electric {
+  background-color: #FFFF00;
+  color: black;
 }
