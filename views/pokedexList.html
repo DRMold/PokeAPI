@@ -2,73 +2,10 @@
   <link rel="stylesheet" type="text/css" href="../content/pokedex.css">
 </head>
 
+<!-- <script src="pokemon_list.js"></script> -->
 
-  <div id="boxForList">
-    <div class="dexEntry">
-      <span class="dexEntryTitle">Bulbasaur</span>
-    </div>
-    <div class="dexEntry">
-      <span class="dexEntryTitle">Ivysaur</span>
-    </div>
-    <div class="dexEntry">
-      <span class="dexEntryTitle">Venusaur</span>
-    </div>
-    <div class="dexEntry">
-      <span class="dexEntryTitle">Charmander</span>
-    </div>
-    <div class="dexEntry">
-      <span class="dexEntryTitle">Charmeleon</span>
-    </div>
-    <div class="dexEntry">
-      <span class="dexEntryTitle">Charizard</span>
-    </div>
-    <div class="dexEntry">
-      <span class="dexEntryTitle">Charizard</span>
-    </div>
-    <div class="dexEntry">
-      <span class="dexEntryTitle">Charizard</span>
-    </div>
-    <div class="dexEntry">
-      <span class="dexEntryTitle">Charizard</span>
-    </div>
-    <div class="dexEntry">
-      <span class="dexEntryTitle">Charizard</span>
-    </div>
-    <div class="dexEntry">
-      <span class="dexEntryTitle">Charizard</span>
-    </div>
-    <div class="dexEntry">
-      <span class="dexEntryTitle">Charizard</span>
-    </div>
-    <div class="dexEntry">
-      <span class="dexEntryTitle">Charizard</span>
-    </div>
-    <div class="dexEntry">
-      <span class="dexEntryTitle">Charizard</span>
-    </div>
-    <div class="dexEntry">
-      <span class="dexEntryTitle">Charizard</span>
-    </div>
-    <div class="dexEntry">
-      <span class="dexEntryTitle">Charizard</span>
-    </div>
-    <div class="dexEntry">
-      <span class="dexEntryTitle">Charizard</span>
-    </div>
-    <div class="dexEntry">
-      <span class="dexEntryTitle">Charizard</span>
-    </div>
-    <div class="dexEntry">
-      <span class="dexEntryTitle">Charizard</span>
-    </div>
-    <div class="dexEntry">
-      <span class="dexEntryTitle">Charizard</span>
-    </div>
-    <div class="dexEntry">
-      <span class="dexEntryTitle">Charizard</span>
-    </div>
-    <div class="dexEntry">
-      <span class="dexEntryTitle">Charizard</span>
-    </div>
-
+ <div id="boxForList" ng-controller="PokeListController">
+   <div class="dexEntry" ng-repeat="(id, pokemon) in pokeList">
+     <span class="dexEntryTitle">{{pokemon}}</span>
+   </div>
   </div>

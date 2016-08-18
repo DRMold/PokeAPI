@@ -1,4 +1,4 @@
-{
+var pokeList = {
 "1" : "Bulbasaur",
 "2" : "Ivysaur",
 "3" : "Venusaur",
@@ -721,5 +721,5 @@
 "720" : "Zygarde",
 "721" : "Diancie",
 "722" : "Hoopa",
-"723" : "Volcanion",
-}
+"723" : "Volcanion"
+};
