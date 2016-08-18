@@ -10,26 +10,38 @@ body {
 }
 
 #pokedexList {
+  background-image: url("../views/pokedex.png");
+  background-size: 100% 100%;
+  height: 535px;
   display: inline-block;
   vertical-align: top;
-  width: 25%;
-  border: 4px solid green;
+  width: 30%;
 }
 
 .dexEntry {
+  background-color: #DDDDDD;
   box-shadow: 0 0 0 1px #8a8a8a inset;
   padding: 5px;
   margin-bottom: -1px;
 }
 
 .dexEntryTitle {
-  color: #881111;
+  color: #555555;
+  margin-left: 20px;
+  font-family: Verdana, Geneva, sans-serif;
+  font-size: 20px;
+  font-style: normal;
+  font-variant: normal;
+  font-weight: 500;
 }
 
 #boxForList {
   display: inline-block;
-  height:535px;
-  width:100%;
+  margin-top: 137px;
+  margin-left: 6.5%;
+  height:300px;
+  width:75.8%;
+  /*border: 1px solid yellow;*/
   overflow:auto;
 }
 
@@ -37,8 +49,7 @@ body {
   vertical-align: top;
   display: inline-block;
   height: 535px;
-  width: 70%;
-  border: 4px solid red;
+  width: 60%;
   /*box-shadow: 0 0 0 1px #8a8a8a inset;*/
 }
 
@@ -53,6 +64,7 @@ body {
 #addToTeamButton {
   float: right;
   padding: 10px;
+  margin-top: 10px;
   width: 160px;
   height: 50px;
   font-size: 20px;
