@@ -23,7 +23,7 @@
 
 		// };
 
-		$scope.removeTeam = function(id, index) {
+		$scope.removeTeam = function(index) {
 			if($scope.team.length >== 1) { 
 				$scope.team.splice(index, 1);
 			}
@@ -40,5 +40,12 @@
 
 
 	};
+
+	$scope.addTeam(1);
+	$scope.addTeam(2);
+	$scope.addTeam(3);
+	$scope.addTeam(4);
+	$scope.addTeam(5);
+	$scope.addTeam(6);
 	
 }());
