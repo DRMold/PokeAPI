@@ -10,7 +10,7 @@
 					$scope.team.push(response.data);
 				},
 				function(error) {
-					$window.alert(error.message);
+					console.log("Failed to retrieve pokemon, " + id);
 				})
 			}
 			else {
