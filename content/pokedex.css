@@ -12,12 +12,11 @@ body {
 #pokedexList {
   display: inline-block;
   width: 25%;
-  box-shadow: 0 0 0 2px green inset;
 }
 
 .dexEntry {
   box-shadow: 0 0 0 1px #8a8a8a inset;
-  padding: 2px;
+  padding: 5px;
   margin-bottom: -1px;
 }
 
@@ -26,10 +25,11 @@ body {
 }
 
 #boxForList {
+  padding-left: 50px;
+  padding-top: 30px;
+  display: inline-block;
   height:535px;
-  width:100%;
-
-  box-shadow: 0 0 0 2px red inset;
+  width:300%;
   overflow:auto;
 }
 
