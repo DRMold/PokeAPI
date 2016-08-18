@@ -10,7 +10,8 @@ body {
 }
 
 #pokedexList {
-  box-shadow: 0 0 0 2px #8a8a8a inset;
+  max-width: 30%;
+  box-shadow: 0 0 0 2px green inset;
 }
 
 .dexEntry {
@@ -21,4 +22,11 @@ body {
 
 .dexEntryTitle {
   color: #881111;
+}
+
+#boxForList {
+  height:535px;
+  width:auto;
+  border:1px solid #ccc;
+  overflow:auto;
 }
