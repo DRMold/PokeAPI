@@ -5,10 +5,10 @@ app.service("pokeService", ["$http", function($http) {
     console.log(id);
   	return $http({
   		method: 'GET',
-  		url: "http://pokeapi.co/api/v2/pokemon/" + id,
+  		url: "http://pokeapi.kevgriffin.com/api/v2/pokemon/" + id,
   		cache: true
   	});
   }
 }]);
 
-//http://pokeapi.kevgriffin.com/api/v2/pokemon/
+
