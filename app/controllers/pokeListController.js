@@ -728,7 +728,7 @@
 		};
 
 		$scope.showPokemon = function(id) {
-
+			$scope.selectedID = id;
 			var info = pokeService.getPokemon(id).then( function (response) {
 				$rootScope.$broadcast('pokeDisplay', response);
 			});

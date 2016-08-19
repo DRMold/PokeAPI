@@ -26,6 +26,14 @@ body {
   width: 96%;
 }
 
+.dexEntryHighlight {
+  background-color: #3FCE38;
+  box-shadow: 0 0 0 1px #8a8a8a inset;
+  padding: 5px;
+  margin-bottom: -1px;
+  width: 96%;
+}
+
 .dexEntryTitle {
   color: #555555;
   margin-left: 20px;
