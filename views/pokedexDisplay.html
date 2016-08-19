@@ -1,17 +1,19 @@
 <head>
   <link rel="stylesheet" type="text/css" href="../content/pokedex.css">
 </head>
-
-  <div id="addButtonDiv" ng-controller="pokeController">
+<div ng-controller="pokeController">
+  <div id="addButtonDiv">
     <button id="addToTeamButton" ng-click="add()">Add To Team!</button>
   </div>
   <div id="pokedexPictureDiv">
     <div id="pokedexPicture">
+      <img ng-src="{{data.sprites.front_default}}" width="250px" height="250px">
     </div>
   </div>
   <div id="pokedexNameDiv">
-    <div id="pokedexName"></div>
+    <div id="pokedexName">{{data.name}}</div>
   </div>
   <div id="pokedexTypeDiv">
     <div id="pokedexType">FIRE</div>
+  </div>
 </div>
