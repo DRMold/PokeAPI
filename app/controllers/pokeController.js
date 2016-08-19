@@ -1,5 +1,6 @@
 (function() {
   var pokeController = function ($scope, pokeService, teamService) {
+    var data;
     // pokeService.getPokemon().success(function(data) {
     //     console.log("Data recieved!");
     //     $scope.data = data;
@@ -8,7 +9,7 @@
     //   });
 
       $scope.add = function() {
-        teamService.addToTeam(150);//.success(function() {
+        teamService.addToTeam(data.id);//.success(function() {
         //   console.log("Success?");
         // }).error(function() {
         // console.log("Error?");
@@ -17,6 +18,7 @@
 
     $scope.$on('pokeDisplay', function(event, response) {
       console.log(response.data);
+      data = response.data;
       var displayName = response.data.name;
       displayName = displayName[0].toUpperCase() + displayName.slice(1);
       document.getElementById("pokedexName").innerHTML = displayName;
