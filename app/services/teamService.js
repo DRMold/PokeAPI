@@ -38,7 +38,7 @@ app.service("teamService", ["$rootScope", "pokeService", function($rootScope, po
         team[nTeam - 1] = undefined;
         nTeam--;
 
-        console.log('Removed mon: '+ $nTeam);
+        console.log('Removed mon: '+ nTeam);
 
         $rootScope.$broadcast('removedFromTeam', team);
         console.log("Broadcast 2 Fired!");

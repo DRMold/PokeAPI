@@ -4,7 +4,9 @@
 		$scope.team = [];
 		$scope.nTeam = 0;
 
-
+		$scope.removeTeam = function(index) {
+			teamService.removeFromTeam(index);
+		};
 
 		$scope.$on('addedToTeam', function(event, team) {
 				//teamService.addToTeam(id);
@@ -18,7 +20,7 @@
 				console.log("Broadcast 2 recieved!");
 		});
 
-		$scope.$on('clearedTeam', function(team) {
+		$scope.$on('clearedTeam', function(event, team) {
 				//teamService.addToTeam(id);
 				$scope.team=team;
 				console.log("Broadcast 3 recieved!");
