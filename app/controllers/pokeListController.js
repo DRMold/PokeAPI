@@ -1,6 +1,8 @@
 (function() {
 
 	var PokeListController = function($rootScope, $scope, $window, pokeService) {
+    $scope.pokeSearch = "";
+
     $scope.pokeList = pokeList = {
 		"1" : "Bulbasaur",
 		"2" : "Ivysaur",
