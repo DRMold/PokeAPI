@@ -1,6 +1,7 @@
 app.service("teamService", ["$rootScope", "pokeService", function($rootScope, pokeService) {
   var vm = this;
   var team=[];
+  team[5] = undefined;
   var nTeam=0;
 
   vm.addToTeam = function(id) {

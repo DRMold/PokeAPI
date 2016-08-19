@@ -6,13 +6,13 @@
 
 
 
-		$scope.$on('addedToTeam', function(team) {
+		$scope.$on('addedToTeam', function(event, team) {
 				//teamService.addToTeam(id);
 				$scope.team=team;
-				console.log("Broadcast 1 recieved!");
+				console.log("Broadcast 1 recieved!"+$scope.team);
 		});
 
-		$scope.$on('removedFromTeam', function(team) {
+		$scope.$on('removedFromTeam', function(event, team) {
 				//teamService.addToTeam(id);
 				$scope.team=team;
 				console.log("Broadcast 2 recieved!");
