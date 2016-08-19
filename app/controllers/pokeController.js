@@ -8,7 +8,8 @@
     //   });
 
       $scope.add = function() {
-        teamService.addToTeam($scope.data.id);//.success(function() {
+        if ($scope.data)
+          teamService.addToTeam($scope.data.id);//.success(function() {
         //   console.log("Success?");
         // }).error(function() {
         // console.log("Error?");
