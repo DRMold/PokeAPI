@@ -7,13 +7,13 @@
   </div>
   <div id="pokedexPictureDiv">
     <div id="pokedexPicture">
-      <img ng-src="{{data.sprites.front_default}}" width="250px" height="250px">
+      <img ng-src="{{data.sprites.front_default}}" width="250px" height="250px" ng-if="data !== undefined">
     </div>
   </div>
   <div id="pokedexNameDiv">
     <div id="pokedexName">{{data.name}}</div>
   </div>
   <div id="pokedexTypeDiv">
-    <div id="pokedexType">FIRE</div>
+    <div ng-if="data !== undefined" id="pokedexType" class="type-{{type.type.name}}" ng-repeat="type in data.types">{{type.type.name}}</div>
   </div>
 </div>
