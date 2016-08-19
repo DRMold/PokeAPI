@@ -1,6 +1,6 @@
 (function() {
 
-	var PokeListController = function($scope, $window, pokeService) {
+	var PokeListController = function($rootScope, $scope, $window, pokeService) {
     $scope.pokeList = pokeList = {
 		"1" : "Bulbasaur",
 		"2" : "Ivysaur",
@@ -730,25 +730,14 @@
 		$scope.showPokemon = function(id) {
 
 			var info = pokeService.getPokemon(id).then( function (response) {
-				console.log(response.data);
-				var displayName = response.data.name;
-				displayName = displayName[0].toUpperCase() + displayName.slice(1);
-				document.getElementById("pokedexName").innerHTML = displayName;
-				document.getElementById("pokedexPicture").innerHTML = "";
-				var img = document.createElement('img');
-				img.src = response.data.sprites.front_default;
-				img.width="250px";
-				img.height="250px";
-				img.style.width="250px";
-				img.style.height="250px";
-				document.getElementById("pokedexPicture").appendChild(img);
+				$rootScope.$broadcast('pokeDisplay', response);
 			});
 		};
 
 
 	};
 
-	PokeListController.$inject = ['$scope', '$window', 'pokeService'];
+	PokeListController.$inject = ['$rootScope', '$scope', '$window', 'pokeService'];
     angular.module('myPokeApp').controller('PokeListController', PokeListController);
 
 }());
