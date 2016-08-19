@@ -5,9 +5,19 @@
   <div id="addButtonDiv">
     <button id="addToTeamButton" ng-click="add()">Add To Team!</button>
   </div>
-  <div id="pokedexPictureDiv">
-    <div id="pokedexPicture">
-      <img ng-src="{{data.sprites.front_default}}" width="250px" height="250px" ng-if="data !== undefined">
+  <div id="picAndDataBox">
+    <div id="pokedexPictureDiv">
+      <div id="pokedexPicture">
+        <img ng-src="{{data.sprites.front_default}}" width="250px" height="250px" ng-if="data !== undefined">
+      </div>
+    </div>
+    <div ng-if="data !== undefined" id="dataBox">
+      Speed: {{data.stats[0].base_stat}}<br>
+      Special-Defense: {{data.stats[1].base_stat}}<br>
+      Special-Attack: {{data.stats[2].base_stat}}<br>
+      Defense: {{data.stats[3].base_stat}}<br>
+      Attack: {{data.stats[4].base_stat}}<br>
+      HP: {{data.stats[5].base_stat}}<br>
     </div>
   </div>
   <div id="pokedexNameDiv">
