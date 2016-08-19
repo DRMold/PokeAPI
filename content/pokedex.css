@@ -23,6 +23,7 @@ body {
   box-shadow: 0 0 0 1px #8a8a8a inset;
   padding: 5px;
   margin-bottom: -1px;
+  width: 96%;
 }
 
 .dexEntryTitle {
@@ -84,7 +85,7 @@ body {
   display: inline-block;
   width: auto;
   /*box-shadow: 0 0 0 1px #8a8a8a inset;*/
-  margin-bottom: 20px;
+  /*margin-bottom: 20px;*/
   /*border: 1px solid green;*/
   height: 250px;
   vertical-align: top;
@@ -97,6 +98,7 @@ body {
   /*border: 1px solid #666666;*/
   margin-top: 70px;
   vertical-align: middle;
+  font-family: "Helvetica Neue",Helvetica,Arial,Verdana,"Trebuchet MS";
 }
 
 #pokedexPicture {
@@ -109,10 +111,12 @@ body {
   width: 360px;
   margin: auto;
   /*box-shadow: 0 0 0 1px #8a8a8a inset;*/
-  margin-bottom: 20px;
+  margin-bottom: 15px;
 }
 
 #pokedexName {
+  font-size: 24px;
+  font-family: "Helvetica Neue",Helvetica,Arial,Verdana,"Trebuchet MS";
   text-align: center;
 }
 
@@ -206,4 +210,10 @@ body {
 .type-steel {
   background-color: #B1B1C0;
   color: white;
+}
+
+#pokeSearchInput {
+  width: 305px;
+  height: 30px;
+  font-size: 24px;
 }

@@ -5,7 +5,7 @@
 <!-- <script src="pokemon_list.js"></script> -->
 
  <div id="boxForList" ng-controller="PokeListController">
-	<input type="text" ng-model="pokeSearch">
+	 <input type="text" ng-model="pokeSearch" id="pokeSearchInput" placeholder="Search">
    <div class="dexEntry" ng-repeat="(id, pokemon) in pokeList" ng-click="showPokemon(id)" ng-if="pokemon.toLowerCase().includes(pokeSearch.toLowerCase())">
      <span  class="dexEntryTitle">{{pokemon}}</span>
    </div>
